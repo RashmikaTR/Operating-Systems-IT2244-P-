@@ -1,10 +1,6 @@
-:: 2021 ICT 14
-:: Operating System IT2244 (P)
-:: 10/03/2025
 
 :: Learning Basic Commmanfd Promt & .Bat File  Operation That Enables us To work With CMD 
-
-::Task  :- 
+::2021ICT45
 
 :: Create A dictionary name Critieria_1 Using CMD Enter
    mkdir Critieria_1
