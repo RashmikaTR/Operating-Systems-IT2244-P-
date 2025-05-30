@@ -1,0 +1,24 @@
+
+# 2021 ICT 
+# Operating System IT2244 (P)
+# 25/04/2025
+
+# Quiz...
+
+read -p "Enter number a: " a
+read -p "Enter number b: " b
+read -p "Enter number c: " c
+
+gcd() {
+  while [ $2 -ne 0 ]; do
+    temp=$2
+    set -- $2 $(( $1 % $2 ))
+  done
+  echo $1
+}
+
+g=$(gcd $a $b)
+lcm=$(( a * b / g ))
+
+echo "LCM of $a and $b is: $lcm"
+echo "GCD of $b and $c is: $(gcd $b $c)"
