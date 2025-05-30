@@ -45,7 +45,7 @@ These programs demonstrate the creation of child processes using the fork() syst
 Description: This program attempts to create child processes to calculate factorial, generate Fibonacci, and check for prime numbers based on three user inputs (A, B, C).
 Note: This file contains some logical and syntactical issues in its fork() structure and function calls, which are improved upon in new 23.c. The intention is to have separate processes for A, and then a combined process for B and C, but the implementation is flawed.
 
-2.Process-based Factorial, Fibonacci, and Prime Check (Improved Version) (new 23.c)
+2. Process-based Factorial, Fibonacci, and Prime Check (Improved Version) (new 23.c)
 Description: An improved and corrected version of new 20.c. It properly implements the creation of three distinct child processes:
 Child A: Calculates the factorial of input A.
 Child B: Generates the Fibonacci sequence up to B terms.
@@ -55,6 +55,7 @@ The parent process uses wait(NULL) to ensure all child processes complete before
 3. Process-based Factorial, Fibonacci, and Prime Generation (Alternative Structure) (text1.c)
 Description: This program also uses fork() for concurrent execution of tasks (factorial, Fibonacci, and prime number generation).
 Note: The process creation structure is different from new 23.c. One child handles factorial, another child handles Fibonacci, and the parent process (or the process that creates the Fibonacci child) then executes the prime number generation. The Fibonacci printing logic also has an initial uninitialized variable print. This version lacks wait() calls, which can lead to zombie processes.
+
 ## How to Compile and Run
 1. To compile and run any of these C programs, you will need a C compiler (like GCC). For programs involving fork() (new 20.c, new 23.c, text1.c), you will need a Unix-like environment.
 
